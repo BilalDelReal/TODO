@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="/styles/style.css">
+    <script src="/main.js" type="module"></script>
+    <title>Frontend Mentor | Todo app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        * {
+            font-family: "Josefin Sans", sans-serif;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body class="bg-Very-Dark-Blue">
+<main class="max-w-[1440px] mx-auto relative">
+    <div class="bg-[url('/images/bg-desktop-dark.jpg')] h-[300px] absolute w-full -z-10">
+    </div>
+    <section class="flex flex-col items-center ">
+        <div id="container" class="mt-16 min-w-[540px] drop-shadow-2xl">
+            <!--header-->
+            <header class="flex items-center justify-between mb-12">
+                <h1 class="text-white tracking-[15px] text-4xl font-bold">TODO</h1>
+                <img src="images/icon-sun.svg" alt="icono para cambiar de fondo">
+            </header>
+            <!--input-->
+            <div class="flex items-center bg-Very-Dark-Desaturated-blue gap-x-2 pl-6 rounded-[5px] mb-6 drop-shadow-[0_0_35px_rgba(0,0,0,50%)]">
+                <div class="w-6 h-6 bg-Very-Dark-Desaturated-blue rounded-2xl border border-Very-Dark-Grayish-Blue-darktheme"></div>
+                <input id="inputNewTask"
+                       class="focus-visible:outline-none p-3 bg-Very Dark Blue bg-Very-Dark-Desaturated-blue text-Light-Grayish-Blue-darktheme"
+                       type="text" placeholder="Create a new todo...">
+            </div>
+        </div>
+        <footer class="bg-Very-Dark-Desaturated-blue p-2 flex justify-between min-w-[540px]">
+            <p class="text-Very-Dark-Grayish-Blue-darktheme text-[14px]"><span id="items" class="text-[14px]"></span>
+                items
+                left</p>
+            <div class="flex gap-x-5">
+                <p id="all" class="text-Very-Dark-Grayish-Blue-darktheme text-[14px] hover:text-white selected font-bold cursor-pointer select-none">All</p>
+                <p id="active" class="text-Dark-Grayish-Blue-darktheme text-[14px] hover:text-white font-bold cursor-pointer select-none">Active</p>
+                <p id="completed" class="text-Dark-Grayish-Blue-darktheme text-[14px] hover:text-white font-bold cursor-pointer select-none">Completed</p>
+            </div>
+            <p id="clearCompleted" class="text-Very-Dark-Grayish-Blue-darktheme text-[14px] hover:text-white cursor-pointer select-none">Clear Completed</p>
+        </footer>
+
+    </section>
+</main>
+
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.selected {
+    @apply text-blue-500
+}
+.chekbox {
+  @apply  appearance-none w-6 h-6 bg-Very-Dark-Desaturated-blue rounded-2xl border border-Very-Dark-Grayish-Blue-darktheme cursor-pointer checked:bg-gradient-to-br from-cyan-400 to-violet-600 checked:after:content-[url('/images/icon-check.svg')] relative checked:after:absolute checked:after:left-[50%] checked:after:-translate-x-2/4
+}
+.text-new-task{
+    @apply text-Light-Grayish-Blue-darktheme hover:cursor-pointer select-none mr-auto
+}
+.div-new-task{
+    @apply bg-Very-Dark-Desaturated-blue pl-6 p-3 flex gap-x-6 border-b border-Very-Dark-Grayish-Blue-darktheme rounded-t-[5px]
+}
+.checked  {
+    @apply text-Very-Dark-Grayish-Blue-darktheme line-through hover:cursor-pointer
+}

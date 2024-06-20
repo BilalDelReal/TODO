@@ -10,7 +10,9 @@ let todo = [
         isDone: true
     }
 ]
+
 showTasks(todo)
+dragAndDrop()
 let numItems = document.getElementById("items")
 let inputNewTask = document.getElementById("inputNewTask");
 let containerNewTask = document.getElementById("container")
@@ -80,7 +82,7 @@ inputNewTask.addEventListener("keydown", (e) => {
         }
     }
     toggleCheck()
-
+    dragAndDrop()
 
 })
 containerNewTask.addEventListener("click", (e) => {
@@ -277,6 +279,25 @@ function removeTask(id) {
         }
     }
 
+}
+
+function dragAndDrop(){
+    const draggables = document.querySelectorAll("#div-task")
+    const container = document.querySelector('#container')
+    draggables.forEach(draggable => {
+        draggable.addEventListener("dragstart",()=>{
+            draggable.classList.add("dragging")
+        })
+        container.addEventListener("dragend", ()=>{
+            draggable.classList.remove("dragging")
+        })
+    })
+
+    container.addEventListener("dragover", (e)=>{
+        e.preventDefault()
+        const draggable = document.querySelector(".dragging")
+        container.append(draggable)
+    })
 }
 
 let activTasks = getTasToDo()

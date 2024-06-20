@@ -13,8 +13,11 @@
     @apply text-Light-Grayish-Blue-darktheme hover:cursor-pointer select-none mr-auto
 }
 .div-new-task{
-    @apply bg-Very-Dark-Desaturated-blue pl-6 p-3 flex gap-x-6 border-b border-Very-Dark-Grayish-Blue-darktheme rounded-t-[5px]
+    @apply bg-Very-Dark-Desaturated-blue pl-6 p-3 flex gap-x-6 border-b border-Very-Dark-Grayish-Blue-darktheme rounded-t-[5px] select-none
 }
 .checked  {
     @apply text-Very-Dark-Grayish-Blue-darktheme line-through hover:cursor-pointer
+}
+.dragging{
+    @apply opacity-50
 }

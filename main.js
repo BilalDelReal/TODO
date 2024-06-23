@@ -227,7 +227,7 @@ function showTasks(tasks) {
         container.append(divNewTask)
         let cross = document.createElement("div")
         cross.className = "mr-3 cursor-pointer select-none cross"
-        cross.innerHTML = "<img id='cross' src="images/icon-cross.svg" alt="Cross">"
+        cross.innerHTML = "<img id='cross' src='images/icon-cross.svg' alt='Cross'>"
         divNewTask.append(cross)
         let crossImg = document.getElementById("cross")
         crossImg.setAttribute("data-id", task.id)
@@ -261,7 +261,7 @@ function addTask(task) {
     numItems.innerText = task.length;
     let cross = document.createElement("div")
     cross.className = "mr-3 cursor-pointer select-none cross"
-    cross.innerHTML = "<img id='cross' src="images/icon-cross.svg" alt="Cross">"
+    cross.innerHTML = "<img id='cross' src='images/icon-cross.svg' alt='Cross'>"
     divNewTask.append(cross)
     let crossImg = document.getElementById("cross")
     crossImg.setAttribute("data-id", lastId)
